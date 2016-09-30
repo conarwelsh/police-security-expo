@@ -1,0 +1,58 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:300|Open+Sans:300,600';
+
+html, body, #root {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #00bcd4;
+  border-bottom: 1px dashed transparent;
+  transition: border 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+a:hover {
+  border-bottom: 1px dashed #00bcd4;
+}
+
+.page-animation-enter {
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+}
+
+.page-animation-enter.page-animation-enter-active {
+  opacity: 1;
+}
+
+.page-animation-leave {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.page-animation-leave.page-animation-leave-active {
+  opacity: 0;
+}
+
+.list-animation-enter {
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+}
+
+.list-animation-enter.list-animation-enter-active {
+  opacity: 1;
+}
+
+.list-animation-leave {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.list-animation-leave.list-animation-leave-active {
+  opacity: 0;
+}

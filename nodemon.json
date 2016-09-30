@@ -1,0 +1,9 @@
+{
+  "verbose": false,
+  "watch": [
+  	"dist/server"
+  ],
+  "env": {
+  	"NODE_ENV": "development"
+  }
+}
