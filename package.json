@@ -5,16 +5,18 @@
   "main": "dist/server.js",
   "private": true,
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "babel": "babel src --out-dir dist",
+    "build": "npm run babel && npm run webpack",
     "debug": "DEBUG=cw.* npm start",
     "lint": "eslint src",
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
     "seed": "knex seed:run",
     "serve": "nodemon dist/server",
-    "start": "npm run build -- -w & npm run serve & webpack -w",
+    "start": "npm run babel -- -w & npm run serve & webpack -w",
     "test": "mocha --compilers js:babel-register -c -G -R min --check-leaks --recursive 'src/**/*.test.js'",
-    "test:json": "npm run test:all -- -R json"
+    "test:json": "npm run test:all -- -R json",
+    "webpack": "webpack --progress"
   },
   "author": "Conar Welsh <conarw@gmail.com>",
   "license": "ISC",

@@ -3,7 +3,9 @@ import Radium from 'radium'
 import { Link } from 'react-router'
 import theme from '@/ui/theme'
 
-const palette = theme.palette
+const palette = {
+	primary: ''
+}
 
 const LG_HEADER_SIZE = 150
 const SM_HEADER_SIZE = 75

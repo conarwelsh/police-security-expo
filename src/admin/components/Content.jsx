@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
 import theme from '@/ui/theme'
 
-const palette = theme.palette
-
 const styles = {
 	wrapper: {
 		width: '100%',
-		backgroundColor: palette.primaryOffset,
+		// backgroundColor: primaryOffset,
 	},
 	inner: {
 		maxWidth: '60%',

@@ -13,13 +13,13 @@ html, body, #root {
 a {
   text-decoration: none;
   color: #00bcd4;
-  border-bottom: 1px dashed transparent;
-  transition: border 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  /*border-bottom: 1px dashed transparent;
+  transition: border 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);*/
 }
 
-a:hover {
+/*a:hover {
   border-bottom: 1px dashed #00bcd4;
-}
+}*/
 
 .page-animation-enter {
   opacity: 0.01;

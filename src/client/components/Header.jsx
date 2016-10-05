@@ -1,51 +1,41 @@
 import React, { Component } from 'react'
 import Radium from 'radium'
-import { Link } from 'react-router'
 import theme from '@/ui/theme'
 import ShrinkingHeader from '@/ui/ShrinkingHeader'
+import Link from '@/ui/Link'
 
 const styles = theme.get('Header')
 
-const RadiumLink = Radium(Link)
-
 class Header extends Component {
 
-	state = {
-		largeHeader: true
-	}
-
-	_handleHeaderChange(isLarge) {
-		this.setState({
-			largeHeader: isLarge
-		})
-	}
-
 	render() {
-		const isLg = this.state.largeHeader
-
 		const linkStyles = [
 			styles.link,
-			!isLg && styles.linkSmall,
+			styles.linkSmall,
 		]
 		
-		return <ShrinkingHeader
-			style={styles.header}
-			small={styles.headerSmall}
-			isLarge={isLg}
-			onChange={this._handleHeaderChange.bind(this)}
+		return <header
+			style={[
+				styles.header,
+				styles.headerSmall
+			]}
 		>
-			<div style={[
-				styles.brand,
-				! isLg && styles.brandSmall,
-			]}>
-				Boilerplate
-			</div>
-			<nav style={styles.nav}>
-				<RadiumLink style={linkStyles} to='/'>Home</RadiumLink>
-				<RadiumLink style={linkStyles} to='/about'>About</RadiumLink>
-				<RadiumLink style={linkStyles} to='/contact'>Contact</RadiumLink>
-			</nav>
-		</ShrinkingHeader>
+			<Link
+				to='/'
+				style={[
+					styles.brand,
+					styles.brandSmall,
+				]}
+			>
+				<img src="/img/medallion-100pixel.png" style={{ height: 40, verticalAlign: 'sub' }} />
+				&nbsp;&nbsp;Police Security Expo
+			</Link>
+			{/*<nav style={styles.nav}>
+				<Link style={linkStyles} to='/exhibitors'>Exhibitors</Link>
+				<Link style={linkStyles} to='/accomodations'>Accomodations</Link>
+				<Link style={linkStyles} to='/floorplan'>Floorplan</Link>
+			</nav>*/}
+		</header>
 	}
 
 }

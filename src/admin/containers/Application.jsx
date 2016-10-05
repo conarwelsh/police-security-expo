@@ -31,6 +31,8 @@ export default class Application extends Component {
 					req.options.headers = {}
 				}
 
+				console.log('token', localStorage.getItem('token'))
+
 				req.options.headers.authorization = localStorage.getItem('token')
 					|| null
 
