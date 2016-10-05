@@ -42,7 +42,7 @@ export default class Home extends Component {
 				</div>
 			</FullPage>
 			<FullPage
-				bgImg="/img/RGK_0525.jpg"
+				bgImg="/img/RGK_0525.JPG"
 				bgColor="black"
 			>
 				<div style={{
@@ -85,7 +85,7 @@ export default class Home extends Component {
 				</div>
 			</FullPage>
 			<FullPage
-				bgImg="/img/RGK_0651.jpg"
+				bgImg="/img/RGK_0651.JPG"
 				bgColor="red"
 			>
 				<div style={{
