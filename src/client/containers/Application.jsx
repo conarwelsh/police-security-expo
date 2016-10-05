@@ -5,7 +5,6 @@ import { ApolloProvider } from 'react-apollo'
 
 import Content from '~/client/components/Content'
 import Header from '~/client/components/Header'
-import Footer from '~/client/components/Footer'
 import theme from '@/ui/theme'
 
 const styles = theme.get('Application')
@@ -60,7 +59,6 @@ export default class Application extends Component {
 						key: location.pathname
 					})}
 				</ReactCSSTransitionGroup>
-				<Footer />
 			</div>
 		</ApolloProvider>
 	}

@@ -10,42 +10,30 @@ const RadiumLink = Radium(Link)
 
 class Header extends Component {
 
-	state = {
-		largeHeader: true
-	}
-
-	_handleHeaderChange(isLarge) {
-		this.setState({
-			largeHeader: isLarge
-		})
-	}
-
 	render() {
-		const isLg = this.state.largeHeader
-
 		const linkStyles = [
 			styles.link,
-			!isLg && styles.linkSmall,
+			styles.linkSmall,
 		]
 		
-		return <ShrinkingHeader
-			style={styles.header}
-			small={styles.headerSmall}
-			isLarge={isLg}
-			onChange={this._handleHeaderChange.bind(this)}
+		return <header
+			style={[
+				styles.header,
+				styles.headerSmall
+			]}
 		>
 			<div style={[
 				styles.brand,
-				! isLg && styles.brandSmall,
+				styles.brandSmall,
 			]}>
-				Boilerplate
+				Police Security Expo
 			</div>
 			<nav style={styles.nav}>
-				<RadiumLink style={linkStyles} to='/'>Home</RadiumLink>
-				<RadiumLink style={linkStyles} to='/about'>About</RadiumLink>
-				<RadiumLink style={linkStyles} to='/contact'>Contact</RadiumLink>
+				<RadiumLink style={linkStyles} to='/exhibitors'>Exhibitors</RadiumLink>
+				<RadiumLink style={linkStyles} to='/accomodations'>Accomodations</RadiumLink>
+				<RadiumLink style={linkStyles} to='/floorplan'>Floorplan</RadiumLink>
 			</nav>
-		</ShrinkingHeader>
+		</header>
 	}
 
 }
