@@ -1,4 +1,4 @@
-import Local from '@/Cache/drivers/Local'
+import Local from '@/cache/drivers/Local'
 
 const DEFAULT_TTL = 1000 * 60 * 15 // 15 minutes
 
