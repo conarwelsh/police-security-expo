@@ -26,6 +26,7 @@ class Header extends Component {
 				styles.brand,
 				styles.brandSmall,
 			]}>
+				<img src="/img/logo.png" />
 				Police Security Expo
 			</div>
 			<nav style={styles.nav}>

@@ -7,13 +7,18 @@ console.log('ASD', styles)
 class FullPage extends Component {
 
 	render() {
-		return <div style={[
+		const {
+			style,
+			id,
+		} = this.props
+
+		return <div id={id} style={[
 			styles,
 			{
 				backgroundColor: this.props.bgColor,
 				borderTop: `1px solid ${this.props.bgColor}`,
 			},
-			this.props.style,
+			style,
 		]}>
 			<div style={{
 				backgroundImage: `url(${this.props.bgImg})`,

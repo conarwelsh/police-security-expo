@@ -32,8 +32,11 @@ export default class Home extends Component {
 					<h1 style={{ textTransform: 'uppercase' }}>Technology and Solutions</h1>
 	            	<h3>For today and tomorrow</h3>
 	            	<div>
-						<a href="#register" style={{ display: 'inline-block', marginRight: 10 }}>
-							<Button href="#register" kind="primary">Register Now</Button>
+						<a href="#attendee" style={{ display: 'inline-block', marginRight: 10 }}>
+							<Button href="#register" kind="primary">Register as Attendee</Button>
+						</a>
+						<a href="#exhibitor" style={{ display: 'inline-block', marginRight: 10 }}>
+							<Button href="#register" kind="primary">Register as Exhibitor</Button>
 						</a>
 						<Link to="/accomodations" style={{ display: 'inline-block', marginLeft: 10 }}>
 							<Button kind="accent">Book Hotel</Button>
@@ -127,6 +130,7 @@ export default class Home extends Component {
 			<FullPage
 				bgImg="/img/RGK_0003.jpg"
 				bgColor="white"
+				id="attendee"
 			>
 				<div style={{
 					backgroundColor: 'rgba(0,0,0,0.75)',
@@ -167,6 +171,7 @@ export default class Home extends Component {
 			<FullPage
 				bgImg="/img/RGK_0743.jpg"
 				bgColor="blue"
+				id="exhibitor"
 			>
 				<div style={{
 					backgroundColor: 'rgba(0,0,0,0.75)',
