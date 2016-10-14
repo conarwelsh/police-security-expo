@@ -13,7 +13,7 @@ export default class Home extends Component {
 	render() {
 		return <div style={styles.wrapper}>
 			<FullPage
-				bgImg="/img/RGK_0743.jpg"
+				bgImg="/img/website2.jpg"
 				bgColor="black"
 				style={{
 					textAlign: 'center',
@@ -57,7 +57,7 @@ export default class Home extends Component {
 				</div>
 			</FullPage>
 			<FullPage
-				bgImg="/img/RGK_0732.jpg"
+				bgImg="/img/website3.jpg"
 				bgColor="black"
 			>
 				<div style={{
@@ -141,7 +141,7 @@ export default class Home extends Component {
 			</FullPage>
 			{/*bgImg="/img/RGK_0003.jpg"*/}
 			<FullPage
-				bgImg="/img/RGK_0748.jpg"
+				bgImg="/img/website1.jpg"
 				bgColor="white"
 				id="attendee"
 			>
@@ -170,15 +170,24 @@ export default class Home extends Component {
 						effective on the job.
 					</p>
 
-					<Link to="/seminars">
-						<Button kind="primary">Seminars List</Button>
-					</Link>
-					<Link to="/exhibitors">
-						<Button kind="primary">Exhibitor List</Button>
-					</Link>
-					<Link to="/floorplan">
-						<Button kind="primary">Floorplan</Button>
-					</Link>
+					<Button
+						kind="primary"
+						to="/seminars"
+					>
+						Seminars List
+					</Button>
+					<Button
+						kind="primary"
+						to="/exhibitors"
+					>
+						Exhibitor List
+					</Button>
+					<Button
+						kind="primary"
+						to="/floorplan"
+					>
+						Floorplan
+					</Button>
 				</div>
 			</FullPage>
 			<FullPage
@@ -228,8 +237,18 @@ export default class Home extends Component {
 					>
 						Register Now
 					</Button>
-					<Button kind="accent">Download Prospectus</Button>
-					<Button kind="accent">Download Service Manual</Button>
+					<Button
+						kind="accent"
+						href="/files/PSE 2016 Prospectus.pdf"
+						target="_blank"
+					>
+						Download Prospectus
+					</Button>
+					<Button
+						kind="accent"
+					>
+						Download Service Manual
+					</Button>
 				</div>
 			</FullPage>
 		</div>
