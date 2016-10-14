@@ -13,7 +13,7 @@ export default class Home extends Component {
 	render() {
 		return <div style={styles.wrapper}>
 			<FullPage
-				bgImg="/img/RGK_0748.jpg"
+				bgImg="/img/RGK_0743.jpg"
 				bgColor="black"
 				style={{
 					textAlign: 'center',
@@ -32,20 +32,32 @@ export default class Home extends Component {
 					<h1 style={{ textTransform: 'uppercase' }}>Technology and Solutions</h1>
 	            	<h3>For today and tomorrow</h3>
 	            	<div>
-						<a href="#attendee" style={{ display: 'inline-block', marginRight: 10 }}>
-							<Button href="#register" kind="primary">Register as Attendee</Button>
-						</a>
-						<a href="#exhibitor" style={{ display: 'inline-block', marginRight: 10 }}>
-							<Button href="#register" kind="primary">Register as Exhibitor</Button>
-						</a>
-						<Link to="/accomodations" style={{ display: 'inline-block', marginLeft: 10 }}>
-							<Button kind="accent">Book Hotel</Button>
-						</Link>
+						<Button
+							href="#attendee"
+							kind="primary"
+							style={{ display: 'inline-block', marginRight: 10 }}
+						>
+							Register as Attendee
+						</Button>
+						<Button
+							href="#exhibitor"
+							kind="primary"
+							style={{ display: 'inline-block', marginRight: 10 }}
+						>
+							Register as Exhibitor
+						</Button>
+						<Button
+							to="/accomodations"
+							kind="accent"
+							style={{ display: 'inline-block', marginLeft: 10 }}
+						>
+							Book Hotel
+						</Button>
 					</div>
 				</div>
 			</FullPage>
 			<FullPage
-				bgImg="/img/RGK_0525.JPG"
+				bgImg="/img/RGK_0732.jpg"
 				bgColor="black"
 			>
 				<div style={{
@@ -88,7 +100,7 @@ export default class Home extends Component {
 				</div>
 			</FullPage>
 			<FullPage
-				bgImg="/img/RGK_0651.JPG"
+				bgImg="/img/RGK_0761.JPG"
 				bgColor="red"
 			>
 				<div style={{
@@ -127,8 +139,9 @@ export default class Home extends Component {
 					</div>
 				</div>
 			</FullPage>
+			{/*bgImg="/img/RGK_0003.jpg"*/}
 			<FullPage
-				bgImg="/img/RGK_0003.jpg"
+				bgImg="/img/RGK_0748.jpg"
 				bgColor="white"
 				id="attendee"
 			>
@@ -187,7 +200,7 @@ export default class Home extends Component {
 
 					<h3>Make the Connections that Count!</h3>
 
-					<p style={{fontSize:'1.3em'}}>
+					<p style={{ fontSize: "1.3em" }}>
 						The industry's longest running, most respected,
 						attendee-driven product showcase.
 					</p>
@@ -208,7 +221,13 @@ export default class Home extends Component {
 						of Atlantic City, New Jersey.
 					</p>
 
-					<Button kind="accent">Register Now</Button>
+					<Button
+						kind="accent"
+						href="/files/PSE17 Application & Exhibit Space Contract.pdf"
+						target="_blank"
+					>
+						Register Now
+					</Button>
 					<Button kind="accent">Download Prospectus</Button>
 					<Button kind="accent">Download Service Manual</Button>
 				</div>
