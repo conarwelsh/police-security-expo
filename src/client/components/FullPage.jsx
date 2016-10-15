@@ -3,7 +3,7 @@ import Radium from 'radium'
 import theme from '@/ui/theme'
 
 const styles = theme.get('FullPage')
-console.log('ASD', styles)
+
 class FullPage extends Component {
 
 	render() {

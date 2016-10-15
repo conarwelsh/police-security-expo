@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
 import Radium from 'radium'
-import { Link } from 'react-router'
 import theme from '@/ui/theme'
 import ShrinkingHeader from '@/ui/ShrinkingHeader'
+import Link from '@/ui/Link'
 
 const styles = theme.get('Header')
-
-const RadiumLink = Radium(Link)
 
 class Header extends Component {
 
@@ -22,17 +20,20 @@ class Header extends Component {
 				styles.headerSmall
 			]}
 		>
-			<div style={[
-				styles.brand,
-				styles.brandSmall,
-			]}>
-				<img src="/img/logo.png" />
+			<Link
+				to='/'
+				style={[
+					styles.brand,
+					styles.brandSmall,
+				]}
+			>
+				<img src="/img/medallion-100pixel.png" style={{ height: 40, verticalAlign: 'sub' }} />
 				Police Security Expo
-			</div>
+			</Link>
 			<nav style={styles.nav}>
-				<RadiumLink style={linkStyles} to='/exhibitors'>Exhibitors</RadiumLink>
-				<RadiumLink style={linkStyles} to='/accomodations'>Accomodations</RadiumLink>
-				<RadiumLink style={linkStyles} to='/floorplan'>Floorplan</RadiumLink>
+				<Link style={linkStyles} to='/exhibitors'>Exhibitors</Link>
+				<Link style={linkStyles} to='/accomodations'>Accomodations</Link>
+				<Link style={linkStyles} to='/floorplan'>Floorplan</Link>
 			</nav>
 		</header>
 	}

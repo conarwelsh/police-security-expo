@@ -27,10 +27,10 @@ export default class User extends Model {
 		'password',
 	]
 
-	constructor(...args) {
-		super(...args)
-		this.token = '123asd234'
-	}
+	// constructor(...args) {
+	// 	super(...args)
+	// 	this.token = '123asd234'
+	// }
 
 	getEmailAttribute() {
 		return toLower(this.attributes.email || '')
