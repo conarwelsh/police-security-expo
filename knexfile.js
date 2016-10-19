@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 // Update with your config settings.
 console.log('MYSQL CONFIG', {
       database: process.env.DB_DATABASE,
