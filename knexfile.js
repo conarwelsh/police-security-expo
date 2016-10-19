@@ -19,7 +19,7 @@ module.exports = {
       directory: './migrations'
     },
     seeds: {
-      directory: './seeds/production'
+      directory: './seeds/dev'
     }
   },
 

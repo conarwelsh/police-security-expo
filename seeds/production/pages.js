@@ -9,7 +9,7 @@ exports.seed = function(knex, Promise) {
           id: 1,
           title: '',
           slug: 'floorplan',
-          body: "<link rel='stylesheet' href='https://f073797bc04c36d81e26-e77d9efa26b314096886a4d1d7556ce0.ssl.cf1.rackcdn.com/map-embed.css'><div class='imWrapper'><div class='imContainer'><iframe id='imFrame' src='//www.map-dynamics.com/pse2017/?embed=true' allowfullscreen scrolling='yes'></iframe></div></div>",
+          body: "<link rel='stylesheet' href='https://f073797bc04c36d81e26-e77d9efa26b314096886a4d1d7556ce0.ssl.cf1.rackcdn.com/map-embed.css'><div class='imWrapper'><div class='imContainer'><iframe id='imFrame' src='//www.map-dynamics.com/pse2017/?embed=true' allowfullscreen scrolling='yes' frameBorder='0'></iframe></div></div>",
         }),
         knex('pages').insert({
           id: 2,
