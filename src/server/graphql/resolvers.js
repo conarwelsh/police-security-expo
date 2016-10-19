@@ -1,5 +1,6 @@
+import moment from 'moment'
 import Users from '~/server/services/users'
-import Pages from '~/server/services/Pages'
+import Pages from '~/server/services/pages'
 
 const users = new Users()
 const pages = new Pages()
@@ -31,7 +32,13 @@ export default {
 			return new Date(value); // value from the client
 		},
 		__serialize(value) {
-			return value.getTime(); // value sent to the client
+			if(value !== '0000-00-00 00:00:00'){
+				let time = moment(value, "YYYY-MM-DD HH:mm:ss")
+				return time.toDate().getTime(); // value sent to the client
+			}
+			else {
+				return 0
+			}
 		},
 		__parseLiteral(ast) {
 			if (ast.kind === Kind.INT) {
@@ -44,5 +51,29 @@ export default {
 		data(auth, args, ctx) {
 			return auth.data
 		}
+	},
+	Page: {
+		publishedAt(page, args, ctx) {
+			return page.published_at
+			// return moment(page.created_at, "YYYY-MM-DD HH:mm:ss")
+		},
+		createdAt(page, args, ctx) {
+			return page.created_at
+			// return moment(page.created_at, "YYYY-MM-DD HH:mm:ss")
+		},
+		updatedAt(page, args, ctx) {
+			return page.updated_at
+			// return moment(page.updated_at, "YYYY-MM-DD HH:mm:ss")
+		},
+	},
+	User: {
+		createdAt(user, args, ctx) {
+			return user.created_at
+			// return moment(user.created_at, "YYYY-MM-DD HH:mm:ss")
+		},
+		updatedAt(user, args, ctx) {
+			return user.updated_at
+			// return moment(user.updated_at, "YYYY-MM-DD HH:mm:ss")
+		},
 	},
 }

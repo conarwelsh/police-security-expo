@@ -9,6 +9,8 @@ import theme from '@/ui/theme'
 
 const palette = theme.get('palette')
 
+console.log(palette)
+
 const styles = {
 	wrapper: {
 		width: '100%',
@@ -23,7 +25,7 @@ export default class Application extends Component {
 	constructor(...args) {
 		super(...args)
 		const { schema } = this.props
-		const networkInterface = createNetworkInterface('http://localhost:3000/graphql')
+		const networkInterface = createNetworkInterface('/graphql')
 
 		networkInterface.use([{
 			applyMiddleware(req, next) {

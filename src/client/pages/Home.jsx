@@ -167,6 +167,27 @@ export default class Home extends Component {
 						effective on the job.
 					</p>
 
+					<div style={{ padding: '10px 0 30px 0' }}>
+						{/*<Button
+							kind="primary"
+							to="/seminars"
+						>
+							Seminars List
+						</Button>
+						<Button
+							kind="primary"
+							to="/exhibitors"
+						>
+							Exhibitor List
+						</Button>*/}
+						<Button
+							kind="primary"
+							to="/floorplan"
+						>
+							Floorplan
+						</Button>
+					</div>
+
 					<iframe
 						width="560"
 						height="315"
@@ -174,25 +195,6 @@ export default class Home extends Component {
 						frameBorder="0"
 						allowFullScreen
 					/>
-
-					{/*<Button
-						kind="primary"
-						to="/seminars"
-					>
-						Seminars List
-					</Button>
-					<Button
-						kind="primary"
-						to="/exhibitors"
-					>
-						Exhibitor List
-					</Button>
-					<Button
-						kind="primary"
-						to="/floorplan"
-					>
-						Floorplan
-					</Button>*/}
 				</div>
 			</FullPage>
 			<FullPage
