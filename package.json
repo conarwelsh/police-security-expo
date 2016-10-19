@@ -8,6 +8,7 @@
     "babel": "babel src --out-dir dist",
     "build": "npm run babel && npm run webpack",
     "debug": "DEBUG=cw.* npm start",
+    "deploy": "pm2 deploy ecosystem.json production",
     "lint": "eslint src",
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
