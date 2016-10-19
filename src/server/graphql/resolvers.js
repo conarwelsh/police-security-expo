@@ -1,6 +1,6 @@
 import moment from 'moment'
 import Users from '~/server/services/users'
-import Pages from '~/server/services/Pages'
+import Pages from '~/server/services/pages'
 
 const users = new Users()
 const pages = new Pages()
