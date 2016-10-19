@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
+import Remarkable from 'remarkable'
 
 class ShowPage extends Component {
 
@@ -11,12 +12,24 @@ class ShowPage extends Component {
 
 		if( ! page){
 			return <div>
-				Coming Soon
+				Not Found
 			</div>
 		}
 
+		const {
+			title,
+			body,
+		} = page
+
+		const md = new Remarkable({
+			html: true,
+		});
+
+		const rendered = md.render(body)
+
 		return <div>
-			<h1>{page.title}</h1>
+			<h1>{title}</h1>
+			<div dangerouslySetInnerHTML={{ __html: rendered }} />
 		</div>
 	}
 

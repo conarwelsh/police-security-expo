@@ -9,6 +9,8 @@ import theme from '@/ui/theme'
 
 const palette = theme.get('palette')
 
+console.log(palette)
+
 const styles = {
 	wrapper: {
 		width: '100%',
