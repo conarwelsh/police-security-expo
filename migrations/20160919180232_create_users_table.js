@@ -10,8 +10,8 @@ exports.up = function(knex, Promise) {
 		table.string('githubId');
 		table.string('googleId');
 		table.string('linkedinId');
-		table.dateTime('createdAt').notNullable().defaultTo(knex.raw('NOW()'));
-		table.dateTime('updatedAt').notNullable().defaultTo(knex.raw('NOW()'));
+		table.dateTime('createdAt').notNullable().defaultTo(knex.raw("'NOW()'"));
+		table.dateTime('updatedAt').notNullable().defaultTo(knex.raw("'NOW()'"));
 	});
 };
 
