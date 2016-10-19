@@ -5,9 +5,8 @@ exports.up = function(knex, Promise) {
 		table.string('title');
 		table.string('slug');
 		table.text('body');
-		table.dateTime('publishedAt').defaultTo(null);
-		table.dateTime('createdAt').notNullable().defaultTo(knex.raw('now()'));
-		table.dateTime('updatedAt').notNullable().defaultTo(knex.raw('now()'));
+		table.dateTime('published_at').defaultTo(null);
+		table.timestamps();
 	})
 };
 
