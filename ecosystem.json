@@ -18,6 +18,14 @@
    * http://pm2.keymetrics.io/docs/usage/deployment/
    */
   "deploy" : {
+    "staging" : {
+      "user" : "root",
+      "host" : "45.79.165.28",
+      "ref"  : "origin/staging",
+      "repo" : "git@github.com:conarwelsh/police-security-expo.git",
+      "path" : "/var/www/staging-police-security-expo",
+      "post-deploy" : "npm install && npm run build && npm run migrate && npm run seed && pm2 startOrRestart ecosystem.json --env production"
+    },
     "production" : {
       "user" : "root",
       "host" : "45.79.165.28",

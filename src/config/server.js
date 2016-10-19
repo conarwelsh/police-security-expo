@@ -1,3 +1,5 @@
+console.log('ON PORT', PORT)
+
 export default {
-	port: 3000,
+	port: process.env.PORT || 3000,
 }
