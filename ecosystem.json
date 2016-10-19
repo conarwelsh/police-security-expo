@@ -24,7 +24,7 @@
       "ref"  : "origin/master",
       "repo" : "git@github.com:conarwelsh/police-security-expo.git",
       "path" : "/var/www/police-security-expo",
-      "post-deploy" : "npm install && npm run build && npm run migrate && npm run seed && && pm2 startOrRestart ecosystem.json --env production"
+      "post-deploy" : "npm install && npm run build && npm run migrate && npm run seed && pm2 startOrRestart ecosystem.json --env production"
     }
   }
 }
