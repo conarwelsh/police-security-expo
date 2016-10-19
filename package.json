@@ -9,6 +9,7 @@
     "build": "npm run babel && npm run webpack",
     "debug": "DEBUG=cw.* npm start",
     "deploy": "pm2 deploy ecosystem.json production",
+    "deploy:staging": "pm2 deploy ecosystem.json staging",
     "lint": "eslint src",
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
