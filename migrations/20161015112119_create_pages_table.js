@@ -6,7 +6,7 @@ exports.up = function(knex, Promise) {
 		table.string('slug');
 		table.text('body');
 		table.dateTime('published_at').defaultTo(null);
-		table.timestamps();
+		table.timestamps(true);
 	})
 };
 
