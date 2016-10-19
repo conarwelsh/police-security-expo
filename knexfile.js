@@ -1,5 +1,11 @@
 // Update with your config settings.
 
+console.log('MYSQLCONFIG', {
+      database: process.env.DB_DATABASE,
+      user:     process.env.DB_USER,
+      password: process.env.DB_PASS
+    })
+
 module.exports = {
 
   development: {
