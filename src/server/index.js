@@ -22,9 +22,9 @@ app.use(graphql)
 
 services.call(app)
 
-app.get('/admin*', (req, res, next) => {
-	res.render('admin')
-})
+// app.get('/admin*', (req, res, next) => {
+// 	res.render('admin')
+// })
 
 app.get('/*', (req, res, next) => {
 	res.render('client')

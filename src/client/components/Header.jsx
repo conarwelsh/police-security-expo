@@ -30,11 +30,11 @@ class Header extends Component {
 				<img src="/img/medallion-100pixel.png" style={{ height: 40, verticalAlign: 'sub' }} />
 				&nbsp;&nbsp;Police Security Expo
 			</Link>
-			{/*<nav style={styles.nav}>
-				<Link style={linkStyles} to='/exhibitors'>Exhibitors</Link>
-				<Link style={linkStyles} to='/accomodations'>Accomodations</Link>
+			<nav style={styles.nav}>
+				{/*<Link style={linkStyles} to='/exhibitors'>Exhibitors</Link>
+				<Link style={linkStyles} to='/accomodations'>Accomodations</Link>*/}
 				<Link style={linkStyles} to='/floorplan'>Floorplan</Link>
-			</nav>*/}
+			</nav>
 		</header>
 	}
 
