@@ -1,0 +1,30 @@
+{
+  /**
+   * Application configuration section
+   * http://pm2.keymetrics.io/docs/usage/application-declaration/
+   */
+  "apps" : [
+
+    // First application
+    {
+      "name"      : "Police Security Expo",
+      "script"    : "bin/www"
+    }
+
+  ],
+
+  /**
+   * Deployment section
+   * http://pm2.keymetrics.io/docs/usage/deployment/
+   */
+  "deploy" : {
+    "production" : {
+      "user" : "root",
+      "host" : "45.79.165.28",
+      "ref"  : "origin/master",
+      "repo" : "git@github.com:conarwelsh/police-security-expo.git",
+      "path" : "/var/www/police-security-expo",
+      "post-deploy" : "npm install && npm link /var/www/huck && npm run migrate && npm run seed && pm2 startOrRestart ecosystem.json --env production"
+    }
+  }
+}
