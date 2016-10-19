@@ -7,8 +7,8 @@
 
     // First application
     {
-      "name"        : "Police Security Expo",
-      "script"      : "dist/server"
+      "name"   : "Police Security Expo",
+      "script" : "dist/server"
     }
 
   ],
