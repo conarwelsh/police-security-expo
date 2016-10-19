@@ -7,8 +7,9 @@
 
     // First application
     {
-      "name"      : "Police Security Expo",
-      "script"    : "bin/www"
+      "name"        : "Police Security Expo",
+      "script"      : "bin/www",
+      "interpreter" : "bash"
     }
 
   ],
