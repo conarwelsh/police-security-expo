@@ -6,10 +6,9 @@ palette.accent = palette.red[800]
 
 const myTheme = base(config, palette)
 
-
 myTheme.FullPage = {
 	width: '100%',
-	height: '100%',
+	// minHeight: '100%',
 	position: 'relative',
 }
 

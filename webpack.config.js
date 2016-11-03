@@ -9,6 +9,4 @@ const builder = new Builder({
 
 builder.babel('js/client.js', path.join(__dirname, 'src', 'client'))
 
-builder.babel('js/admin.js', path.join(__dirname, 'src', 'admin'))
-
 module.exports = builder.toWebpack()

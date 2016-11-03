@@ -4,8 +4,6 @@ import bodyParser from 'body-parser'
 import debug from 'debug'
 
 import config from '~/config'
-import services from './services'
-import graphql from './graphql'
 
 const { server, paths } = config
 
@@ -17,14 +15,6 @@ app.set('view engine', 'pug')
 app.set('views', paths.views)
 
 app.use(bodyParser.json())
-
-app.use(graphql)
-
-services.call(app)
-
-// app.get('/admin*', (req, res, next) => {
-// 	res.render('admin')
-// })
 
 app.get('/*', (req, res, next) => {
 	res.render('client')

@@ -25,13 +25,12 @@ export default class Home extends Component {
 					color: '#fff',
 					padding: '2em',
 					display: 'inline-block',
-					position: 'absolute',
-					top: '50%',
-					left: '50%',
-					transform: 'translateY(-50%) translateX(-50%)',
+					margin: '4em 0',
 				}}>
+					<h1 style={{ textTransform: 'uppercase' }}>31st Annual</h1>
 					<img src="/img/transparent-background---ps.gif" style={{ height: 300 }} />
-					<h1 style={{ textTransform: 'uppercase' }}>Technology and Solutions</h1>
+	            	<h1>June 27 & 28, 2017</h1>
+					<h2 style={{ textTransform: 'uppercase' }}>Technology and Solutions</h2>
 	            	<h3>For today and tomorrow</h3>
 	            	<div>
 						<Button
@@ -52,18 +51,18 @@ export default class Home extends Component {
 				</div>
 			</FullPage>
 			<FullPage
-				bgImg="/img/website3.jpg"
+				bgImg="/img/showfloor2.jpg"
 				bgColor="black"
+				style={{
+					textAlign: 'center',
+				}}
 			>
 				<div style={{
 					backgroundColor: 'rgba(0,0,0,0.75)',
 					color: '#fff',
 					padding: '2em',
 					display: 'inline-block',
-					position: 'absolute',
-					top: '50%',
-					left: '50%',
-					transform: 'translateY(-50%) translateX(-50%)',
+					margin: '4em 0',
 					width: 900,
 					maxWidth: '100%',
 				}}>
@@ -94,21 +93,55 @@ export default class Home extends Component {
 						charged with the responsibility of securing their communities and businesses,
 						while protecting themselves on the job.
 					</p>
+
+					<p>
+						OUR ATTENDEES INCLUDE:
+
+						Police Chiefs, Police Department Directors
+						Municipal Police (All Ranks)
+						State Police (All Ranks)
+						County Police (All Ranks)
+						Airport Police/TSA
+						Allied Association Representatives
+						College/University Campus Police
+						Correction Officers
+						Federal & State Agencies
+						Housing Police
+						Juvenile Officers
+						Marine Police
+						Narcotics Officers
+						Park Police
+						School Resource Officers
+						Sheriff’s Departments
+						Tactical Teams Traffic Safety Officers
+						Transit Police
+						Wardens/Superintendents
+
+						SPECIALISTS INCLUDE: Business Representatives Consultants Corporate Security
+						Administrators Emergency Response Coordinators Executive &amp; Command Staff
+						Fire/Rescue Officers First Responders Fleet Managers Hazardous Materials
+						Coordinators Homeland Security Agencies Mayors/City Managers Private
+						Detectives/Investigators Private Security Firms Prosecutors Procurement
+						Departments Public Utilities Managers Purchasing Agents Risk Management Officers
+						Training Academies/Directors
+					</p>
 				</div>
 			</FullPage>
 			<FullPage
-				bgImg="/img/RGK_0651.JPG"
+				bgImg="/img/website1.jpg"
 				bgColor="red"
+				style={{
+					textAlign: 'center',
+				}}
 			>
 				<div style={{
 					backgroundColor: 'rgba(0,0,0,0.75)',
 					color: '#fff',
 					padding: '2em',
 					display: 'inline-block',
-					position: 'absolute',
-					top: '50%',
-					left: '50%',
-					transform: 'translateY(-50%) translateX(-50%)',
+					margin: '4em 0',
+					width: 900,
+					maxWidth: '100%',
 				}}>
 					<h2>
 						Be seen among the crowd, develop key relationships, launch a new product, say
@@ -140,19 +173,21 @@ export default class Home extends Component {
 				bgImg="/img/RGK_0003.jpg"
 				bgColor="white"
 				id="attendee"
+				style={{
+					textAlign: 'center',
+				}}
 			>
 				<div style={{
 					backgroundColor: 'rgba(0,0,0,0.75)',
 					color: '#fff',
 					padding: '2em',
 					display: 'inline-block',
-					position: 'absolute',
-					top: '50%',
-					left: '50%',
-					transform: 'translateY(-50%) translateX(-50%)',
+					margin: '4em 0',
+					width: 900,
+					maxWidth: '100%',
 					textAlign: 'center',
 				}}>
-					<h1>Attendee Info</h1>
+					<h1>Attendee Information</h1>
 
 					<p style={{fontSize:'1.3em'}}>Over 750 exhibits all on one floor</p>
 
@@ -167,24 +202,42 @@ export default class Home extends Component {
 						effective on the job.
 					</p>
 
+					<p>
+						“FREE” EXPO ADMISSION…
+
+						IF YOU HAVE A LAW ENFORCEMENT OR SECURITY BADGE….THE POLICE SECURITY EXPO IS FOR YOU!
+
+						Police Security Expo 2017 is open to all Industry Professionals with NO ADMISSION FEES. Attendees must register to attend and present appropriate credentials.
+
+						Additional Expo Information: police-securityexpo@comcast.net
+
+						Atlantic City Information: www.atlanticcitynj.com
+					</p>
+
 					<div style={{ padding: '10px 0 30px 0' }}>
-						{/*<Button
+						<Button
 							kind="primary"
-							to="/seminars"
+							to="/exhibitors"
 						>
-							Seminars List
+							Register Now
 						</Button>
 						<Button
 							kind="primary"
 							to="/exhibitors"
 						>
 							Exhibitor List
-						</Button>*/}
+						</Button>
 						<Button
 							kind="primary"
 							to="/floorplan"
 						>
 							Floorplan
+						</Button>
+						<Button
+							kind="primary"
+							to="/seminars"
+						>
+							Seminars
 						</Button>
 					</div>
 
@@ -198,19 +251,21 @@ export default class Home extends Component {
 				</div>
 			</FullPage>
 			<FullPage
-				bgImg="/img/website1.jpg"
+				bgImg="/img/website7.JPG"
 				bgColor="blue"
 				id="exhibitor"
+				style={{
+					textAlign: 'center',
+				}}
 			>
 				<div style={{
 					backgroundColor: 'rgba(0,0,0,0.75)',
 					color: '#fff',
 					padding: '2em',
 					display: 'inline-block',
-					position: 'absolute',
-					top: '50%',
-					left: '50%',
-					transform: 'translateY(-50%) translateX(-50%)',
+					margin: '4em 0',
+					width: 900,
+					maxWidth: '100%',
 				}}>
 					<h1>Register to Exhibit</h1>
 
@@ -228,13 +283,15 @@ export default class Home extends Component {
 
 					<p>Average annual attendance of 7500 industry professionals.</p>
 
-					<p>257,000 sqft of usable floor space - all on one floor.</p>
-
-					<p>Average annual attendance of 7500 industry professionals.</p>
+					<p>257,000 square feet of usable floor space - all on one floor.</p>
 
 					<p>
 						One quarter of the population of the United States lives within 300 miles
 						of Atlantic City, New Jersey.
+					</p>
+
+					<p>
+						This premier destination is the perfect location for attracting Industry Professionals charged with the responsibility of securing their communities and businesses, while protecting themselves on the job.
 					</p>
 
 					<div style={{ textAlign: 'center' }}>
@@ -250,13 +307,13 @@ export default class Home extends Component {
 							kind="accent"
 							style={{ display: 'inline-block', marginRight: 10 }}
 						>
-							Download Prospectus (coming soon)
+							Download Prospectus
 						</Button>
-						{/*<Button
+						<Button
 							kind="accent"
 						>
-							Download Service Manual
-						</Button>*/}
+							Name Badge Registration
+						</Button>
 					</div>
 				</div>
 			</FullPage>

@@ -31,9 +31,31 @@ class Header extends Component {
 				&nbsp;&nbsp;Police Security Expo
 			</Link>
 			<nav style={styles.nav}>
-				{/*<Link style={linkStyles} to='/exhibitors'>Exhibitors</Link>
-				<Link style={linkStyles} to='/accomodations'>Accomodations</Link>*/}
-				<Link style={linkStyles} to='/floorplan'>Floorplan</Link>
+				<Link
+					style={linkStyles}
+					to='/exhibitors'
+				>
+					Exhibitors
+				</Link>
+				<Link
+					style={linkStyles}
+					to='/exhibitors'
+				>
+					Attendees
+				</Link>
+				<Link
+					style={linkStyles}
+					href='https://www.map-dynamics.com/pse2017'
+					target='_blank'
+				>
+					Floorplan
+				</Link>
+				<Link
+					style={linkStyles}
+					to='/accomodations'
+				>
+					Accomodations
+				</Link>
 			</nav>
 		</header>
 	}
