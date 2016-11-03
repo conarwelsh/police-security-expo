@@ -251,7 +251,7 @@ export default class Home extends Component {
 				</div>
 			</FullPage>
 			<FullPage
-				bgImg="/img/website7.JPG"
+				bgImg="/img/website7.jpg"
 				bgColor="blue"
 				id="exhibitor"
 				style={{
