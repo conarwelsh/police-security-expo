@@ -154,35 +154,7 @@ export default class Home extends Component {
 
 
 
-			{/*<section
-				style={{
-					padding:'100px 2em',
-					backgroundColor:'#dedede',
-				}}
-			>
-				<div
-					style={{
-						maxWidth: 600,
-						margin: '0 auto',
-					}}
-				>
-					<h1>
-						Exhibitor
-						<br />
-						<strong>Setup</strong>
-					</h1>
-					<div style={theme.getStyle('partial underline')} />
-
-					<p>Monday, June 26, 2017 8:00AM - 6:00PM</p>
-
-					<p>Attendees must register to attend and present appropriate credentials. Additional Expo Information: police-securityexpo@comcast.net Atlantic City Information: www.atlanticcitynj.com</p>
-					<p> All of our attendees share a common interest and goal – to view goods, products and services to make them safer and more effective on the job.</p>
-				</div>
-			</section>*/}
-
-
-
-
+			
 			<BackgroundSlideshow
 				style={{
 					textAlign:'center',
@@ -237,3 +209,29 @@ export default class Home extends Component {
 	}
 
 }
+
+/*<section
+	style={{
+		padding:'100px 2em',
+		backgroundColor:'#dedede',
+	}}
+>
+	<div
+		style={{
+			maxWidth: 600,
+			margin: '0 auto',
+		}}
+	>
+		<h1>
+			Exhibitor
+			<br />
+			<strong>Setup</strong>
+		</h1>
+		<div style={theme.getStyle('partial underline')} />
+
+		<p>Monday, June 26, 2017 8:00AM - 6:00PM</p>
+
+		<p>Attendees must register to attend and present appropriate credentials. Additional Expo Information: police-securityexpo@comcast.net Atlantic City Information: www.atlanticcitynj.com</p>
+		<p> All of our attendees share a common interest and goal – to view goods, products and services to make them safer and more effective on the job.</p>
+	</div>
+</section>*/
