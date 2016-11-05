@@ -16,6 +16,7 @@ export default class Home extends Component {
 
 			<section className="s-grid-stretch s-grid-sm-12 s-grid-md-6" style={{
 				minHeight: 500,
+				borderTop: '1px solid #dedede',
 			}}>
 				<div className="s-grid-cell" style={{marginTop:0,marginBottom:0}}>
 					<CenteredVertical>
@@ -90,7 +91,10 @@ export default class Home extends Component {
 
 
 
-			<section className="s-grid-stretch" style={{padding:'100px 2em'}}>
+			<section className="s-grid-stretch" style={{
+				padding:'100px 2em',
+				borderTop: '1px solid #dedede',
+			}}>
 				<div className="s-grid-cell s-grid-cell-sm-12 s-grid-cell-md-6">
 					<h1>
 						Attendance of over
@@ -162,18 +166,7 @@ export default class Home extends Component {
 						textAlign: 'center',
 						margin: '0 auto',
 					}}
-				>
-					<h3>Exhibit Opens</h3>
-					<p>Tuesday, June 27, 2017 10:00AM - 5:00PM</p>
-					<p>Wednesday, June 28, 2017 10:00AM - 3:30PM</p>
-
-					<h3>Location</h3>
-					<address>
-						Atlantic City Convention Center
-						Halls C, FLEX & B (Entranceway Hall C)
-						One Convention Blvd, Atlantic City, NJ
-					</address>
-					
+				>	
 					<h3>Exhibitor Setup</h3>
 					<p>Monday, June 26, 2017 8:00AM - 6:00PM</p>
 
@@ -205,22 +198,6 @@ export default class Home extends Component {
 					/>
 				</div>
 			</BackgroundSlideshow>
-
-
-
-
-			<section style={{
-				padding:'100px 2em'
-			}}>
-				<h1>
-					Future Dates
-				</h1>
-				<div style={theme.getStyle('partial underline')} />
-
-				<p className="lead">
-					Coming Soon
-				</p>
-			</section>
 
 
 
