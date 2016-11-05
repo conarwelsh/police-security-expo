@@ -9,13 +9,19 @@ import FadeOnScroll from '~/FadeOnScroll'
 export default class Hero extends Component {
 
 	render() {
-		return <BackgroundSlideshow
+		// return <BackgroundSlideshow
+		// 	className="s-grid-stretch s-grid-sm-12 s-grid-lg-6"
+		// 	images={[
+		// 		'/img/expo-floor-1300pixels-bw.jpg',
+		// 		'/img/RGK_0651.JPG',
+		// 		'/img/RGK_0732.JPG',
+		// 	]}
+		// 	style={{
+		// 		height: '100%',
+		// 	}}
+		// >
+		return <div
 			className="s-grid-stretch s-grid-sm-12 s-grid-lg-6"
-			images={[
-				'/img/expo-floor-1300pixels-bw.jpg',
-				'/img/RGK_0651.JPG',
-				'/img/RGK_0732.JPG',
-			]}
 			style={{
 				height: '100%',
 			}}
@@ -58,7 +64,8 @@ export default class Hero extends Component {
 					</section>
 				</FadeOnScroll>
 			</div>
-		</BackgroundSlideshow>
+		</div>
+		// </BackgroundSlideshow>
 	}
 
 }

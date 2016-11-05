@@ -12,7 +12,7 @@ export default class Layout extends Component {
 
 		return <section>
 			<Header />
-			<main role="main">
+			<main role="main" style={{overflowX:'hidden'}}>
 				{children}
 				<Footer />
 			</main>

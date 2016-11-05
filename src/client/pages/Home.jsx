@@ -37,14 +37,17 @@ export default class Home extends Component {
 					</CenteredVertical>
 				</div>
 				<div className="s-grid-cell hidden-mobile" style={{marginTop:0,marginBottom:0}}>
-					<div
-						style={{
-							width: '100%',
-							height: '100%',
-							backgroundImage: "url(/img/showfloor2.jpg)",
-							backgroundSize: 'cover',
-						}}
-					/>
+					<div className="overlay-wrapper">
+						<div
+							style={{
+								width: '100%',
+								height: '100%',
+								backgroundImage: "url(/img/showfloor2.jpg)",
+								backgroundSize: 'cover',
+							}}
+						/>
+						<div className="light-overlay" />
+					</div>
 				</div>
 			</section>
 
@@ -54,14 +57,17 @@ export default class Home extends Component {
 				minHeight: 500,
 			}}>
 				<div className="s-grid-cell hidden-mobile" style={{marginTop:0,marginBottom:0}}>
-					<div
-						style={{
-							width: '100%',
-							height: '100%',
-							backgroundImage: "url(/img/website1.jpg)",
-							backgroundSize: 'cover',
-						}}
-					/>
+					<div className="overlay-wrapper">
+						<div
+							style={{
+								width: '100%',
+								height: '100%',
+								backgroundImage: "url(/img/website1.jpg)",
+								backgroundSize: 'cover',
+							}}
+						/>
+						<div className="light-overlay" />
+					</div>
 				</div>
 				<div className="s-grid-cell" style={{marginTop:0,marginBottom:0}}>
 					<CenteredVertical>
@@ -189,13 +195,15 @@ export default class Home extends Component {
 					'/img/showfloor2.jpg',
 				]}
 			>
-				<iframe
-					width="560"
-					height="315"
-					src="https://www.youtube.com/embed/2D8kFwmlSMg"
-					frameBorder="0"
-					allowFullScreen
-				/>
+				<div className="videoWrapper">
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/2D8kFwmlSMg"
+						frameBorder="0"
+						allowFullScreen
+					/>
+				</div>
 			</BackgroundSlideshow>
 
 

@@ -49,6 +49,7 @@ theme.setSource('Header', () => ({
 	top: 0,
 	right: 0,
 	left: 0,
+	zIndex: 9000,
 	backgroundColor: 'white',
 	padding: '0 2em',
 }))
@@ -70,7 +71,7 @@ theme.setSource('Navigation.link', (theme) => {
 
 theme.setSource('Footer', () => ({
 	boxShadow: '0 1px 15px rgba(0,0,0,.15)',
-	padding:'100px 2em 0',
+	padding:'100px 2em 50px',
 }))
 
 theme.setSource('Footer.copyright', () => ({

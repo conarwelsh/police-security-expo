@@ -7,7 +7,7 @@ export default class Footer extends Component {
 		return <footer style={theme.getStyle('Footer')}>
 			<section className="s-grid-stretch s-grid-sm-12 s-grid-md-3">
 				<div className="s-grid-cell">
-					SA LOGO
+					<img src="/img/medallion-100pixel.png" />
 					
 					<p className="lead">
 						Police Security Expo 2017
@@ -29,6 +29,7 @@ export default class Footer extends Component {
 					</address>
 				</div>
 				<div className="s-grid-cell">
+					<h4>Page Links</h4>
 					<ul>
 						<li>
 							<a href=''>exhibitors</a>
@@ -45,10 +46,10 @@ export default class Footer extends Component {
 					</ul>
 				</div>
 				<div className="s-grid-cell">
-					ABOUT US
+					<h4>Something Else</h4>
 				</div>
 				<div className="s-grid-cell">
-					RECENT POSTS
+					<h4>More Summary Content</h4>
 				</div>
 			</section>
 
