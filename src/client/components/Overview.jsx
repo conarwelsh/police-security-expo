@@ -37,8 +37,10 @@ export default class Overview extends Component {
 						<p>Free Expo admission. If you have a law enforcement or security badge... The Police Security Expo is for you! Police Security Expo 2017 is open to all Industry Professionals with <strong>no admission fees</strong>.</p>
 					</div>
 					<div className="s-grid-cell">
-						<h3>NEED A FOURTH</h3>
-						This should be a short sentance describing the first bullet point
+						<h3>All Under One Roof</h3>
+						<p>
+							Review, Compare, Evaluate, Price Shop, and Purchase the newest goods & services in the Industry
+						</p>
 					</div>
 				</section>
 			</div>

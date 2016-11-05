@@ -213,9 +213,25 @@ export default class Home extends Component {
 				padding:'100px 2em'
 			}}>
 				<h1>
-					Sponsored by
+					Future Dates
 				</h1>
 				<div style={theme.getStyle('partial underline')} />
+
+				<p className="lead">
+					Coming Soon
+				</p>
+			</section>
+
+
+
+
+			<section style={{
+				padding:'100px 2em'
+			}}>
+				{/*<h1>
+					Sponsored by
+				</h1>
+				<div style={theme.getStyle('partial underline')} />*/}
 
 				<section className="s-grid-stretch s-grid-sm-12 s-grid-md-4">
 					<div className="s-grid-cell">
