@@ -154,7 +154,7 @@ export default class Home extends Component {
 
 
 
-			<section
+			{/*<section
 				style={{
 					padding:'100px 2em',
 					backgroundColor:'#dedede',
@@ -178,7 +178,7 @@ export default class Home extends Component {
 					<p>Attendees must register to attend and present appropriate credentials. Additional Expo Information: police-securityexpo@comcast.net Atlantic City Information: www.atlanticcitynj.com</p>
 					<p> All of our attendees share a common interest and goal – to view goods, products and services to make them safer and more effective on the job.</p>
 				</div>
-			</section>
+			</section>*/}
 
 
 
