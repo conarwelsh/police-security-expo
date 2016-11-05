@@ -79,7 +79,7 @@ theme.setSource('Footer.copyright', () => ({
 	padding:'2em 0 0 0',
 	borderTop:'1px solid #ddd',
 	fontSize: 12,
-	color: '#ddd',
+	color: '#333',
 }))
 
 

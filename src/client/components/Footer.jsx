@@ -13,14 +13,6 @@ export default class Footer extends Component {
 
 					<img src="/img/medallion-100pixel.png" />
 
-					<h5>Location</h5>
-					<address>
-						Atlantic City Convention Center Halls C, FLEX & B (Entranceway Hall C)<br />
-						One Convention Blvd<br />
-						Atlantic City, NJ
-					</address>
-					<br />
-
 					<h5>Mailing</h5>
 					<address>
 						P.O. Box 20068<br />
@@ -53,7 +45,7 @@ export default class Footer extends Component {
 							<a href=''>floorplan</a>
 						</li>
 						<li>
-							<a href=''>accomodations</a>
+							<a href=''>accommodations</a>
 						</li>
 					</ul>
 				</div>
@@ -67,14 +59,25 @@ export default class Footer extends Component {
 				</div>
 			</section>
 
-			<section className="s-grid-stretch s-grid-sm-6" style={theme.getStyle('Footer.copyright')}>
-				<div className="s-grid-cell">
-					&copy; SA 2016
-				</div>
-				<div className="s-grid-cell" style={theme.getStyle('text right')}>
-					facebook
-					twitter
-					etc
+
+			<section style={theme.getStyle('Footer.copyright')}>
+				<address style={{
+					textAlign: 'center',
+				}}>
+					Atlantic City Convention Center Halls C, FLEX & B (Entranceway Hall C)<br />
+					One Convention Blvd<br />
+					Atlantic City, NJ
+				</address>
+
+				<div className="s-grid-stretch s-grid-sm-6">
+					<div className="s-grid-cell">
+						&copy; SA 2016
+					</div>
+					<div className="s-grid-cell" style={theme.getStyle('text right')}>
+						facebook
+						twitter
+						etc
+					</div>
 				</div>
 			</section>
 		</footer>

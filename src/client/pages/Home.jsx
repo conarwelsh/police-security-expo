@@ -163,11 +163,16 @@ export default class Home extends Component {
 				<div
 					style={{
 						maxWidth: 600,
-						textAlign: 'center',
 						margin: '0 auto',
 					}}
-				>	
-					<h3>Exhibitor Setup</h3>
+				>
+					<h1>
+						Exhibitor
+						<br />
+						<strong>Setup</strong>
+					</h1>
+					<div style={theme.getStyle('partial underline')} />
+
 					<p>Monday, June 26, 2017 8:00AM - 6:00PM</p>
 
 					<p>Attendees must register to attend and present appropriate credentials. Additional Expo Information: police-securityexpo@comcast.net Atlantic City Information: www.atlanticcitynj.com</p>

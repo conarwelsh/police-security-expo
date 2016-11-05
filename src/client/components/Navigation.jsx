@@ -8,7 +8,7 @@ export default class Navigation extends Component {
 			<a href='' style={theme.getStyle('Navigation.link')}>exhibitors</a>
 			<a href='' style={theme.getStyle('Navigation.link')}>attendees</a>
 			<a href='' style={theme.getStyle('Navigation.link')}>floorplan</a>
-			<a href='' style={theme.getStyle('Navigation.link')}>accomodations</a>
+			<a href='' style={theme.getStyle('Navigation.link')}>accommodations</a>
 		</nav>
 	}
 
