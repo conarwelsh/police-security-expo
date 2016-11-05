@@ -1,90 +1,67 @@
 import React, { Component } from 'react'
-import theme from '@/ui/theme'
-import Link from '@/ui/Link'
-
-const palette = theme.get('palette')
-const styles = theme.get('Footer')
+import theme from '../theme'
 
 export default class Footer extends Component {
 
 	render() {
-		return <footer style={styles.footer}>
-			<div style={{ width: `${100/3}%`, float: 'left', height: 250 }}>
-				<span style={{ height: '100%', verticalAlign: 'middle', display: 'inline-block' }} />
-				<Link href="http://policeandsecuritynews.com/">
-					<img src="/img/cropped-logopng-100-1.png" style={{ verticalAlign: 'middle' }} />
-				</Link>
-			</div>
-			<div style={{ width: `${100/3}%`, float: 'left', height: 250 }}>
-				<span style={{ height: '100%', verticalAlign: 'middle', display: 'inline-block' }} />
-				<Link href="http://www.njsacop.org/">
-					<img src="/img/NJ Chiefs logo-JPEG file.jpg" style={{ width: 250, verticalAlign: 'middle' }} />
-				</Link>
-			</div>
-			<div style={{ width: `${100/3}%`, float: 'left', height: 250 }}>
-				<span style={{ height: '100%', verticalAlign: 'middle', display: 'inline-block' }} />
-				<Link href="http://www.siteworkassociates.com/">
-					<img src="/img/swa-logo.png" style={{ verticalAlign: 'middle' }} />
-				</Link>
-			</div>
-			
-			<div style={{ clear: 'both' }} />
+		return <footer style={theme.getStyle('Footer')}>
+			<section className="s-grid-stretch s-grid-sm-12 s-grid-md-3">
+				<div className="s-grid-cell">
+					SA LOGO
+					
+					<p className="lead">
+						Police Security Expo 2017
+					</p>
 
-			<div style={{ width: `${100/3}%`, float: 'left' }}>
-				<Link href="http://policeandsecuritynews.com/">
-					Media Sponsor: Police & Security News
-				</Link>
-			</div>
-			<div style={{ width: `${100/3}%`, float: 'left' }}>
-				<Link href="http://www.njsacop.org/">
-					Expo Sponsor: NJ State Association of Chiefs of Police
-				</Link>
-			</div>
-			<div style={{ width: `${100/3}%`, float: 'left' }}>
-				<Link href="http://www.siteworkassociates.com/">
-					Sitework Associates
-				</Link>
-			</div>
+					<address>
+						P.O. Box 20068<br />
+						Sarasota, FL<br />
+						34276
+					</address>
 
-			<div style={{ clear: 'both' }} />
-
-			<div style={{
-				padding: '1em',
-				backgroundColor: palette.primary,
-				color: palette.primaryOffset,
-				marginTop: '2em',
-			}}>
-				<h3>Police Security Expo 2017</h3>
-
-				<p>
-					P.O. Box 20068
-					Sarasota, FL 34276
-				</p>
-
-				<p>
-					<Link href="mailto:police-securityexpo@comcast.net">
+					<address>
 						police-securityexpo@comcast.net
-					</Link>
-				</p>
+					</address>
 
-				<p>
-					P. 1-800-323-1927
-				</p>
-				
-				<p>
-					F. 941-927-5407
-				</p>
+					<address>
+						P. 1-800-323-1927<br />
+						F. 941-927-5407
+					</address>
+				</div>
+				<div className="s-grid-cell">
+					<ul>
+						<li>
+							<a href=''>exhibitors</a>
+						</li>
+						<li>
+							<a href=''>attendees</a>
+						</li>
+						<li>
+							<a href=''>floorplan</a>
+						</li>
+						<li>
+							<a href=''>accomodations</a>
+						</li>
+					</ul>
+				</div>
+				<div className="s-grid-cell">
+					ABOUT US
+				</div>
+				<div className="s-grid-cell">
+					RECENT POSTS
+				</div>
+			</section>
 
-				<p>
-					<Link href="https://www.facebook.com/Police-Security-Expo-161331839134/?fref=ts">
-						Facebook
-					</Link>
-					&nbsp;&middot;&nbsp;
-					<Link href="https://www.instagram.com/policesecurityexpo/">
-						Instagram
-					</Link>
-				</p>
-			</div>
+			<section className="s-grid-stretch s-grid-sm-6" style={theme.getStyle('Footer.copyright')}>
+				<div className="s-grid-cell">
+					&copy; SA 2016
+				</div>
+				<div className="s-grid-cell" style={theme.getStyle('text right')}>
+					facebook
+					twitter
+					etc
+				</div>
+			</section>
 		</footer>
 	}
 

@@ -3,12 +3,12 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import debug from 'debug'
 
-import config from '~/config'
+import config from '../config'
 
 const { server, paths } = config
 
 const app = express()
-const logger = debug('cw.server')
+const logger = debug('ps.server')
 
 app.use(express.static(paths.public))
 app.set('view engine', 'pug')

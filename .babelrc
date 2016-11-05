@@ -9,11 +9,11 @@
       "babel-root-import", [
         {
           "rootPathPrefix": "~",
-          "rootPathSuffix": "src"
+          "rootPathSuffix": "node_modules/@conarwelsh/ui/dist"
         },
         {
           "rootPathPrefix": "@",
-          "rootPathSuffix": "node_modules/huck/dist"
+          "rootPathSuffix": "node_modules/@conarwelsh/framework/dist"
         }
       ]
     ]

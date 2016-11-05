@@ -1,11 +1,13 @@
 import React from 'react'
 import { Router, IndexRoute, Route, browserHistory } from 'react-router'
 
-import Layout from './components/Layout'
-import Home from './pages/Home'
+import Application from '~/client/containers/Application'
+import {
+	Home,
+} from './pages'
 
 export default <Router history={browserHistory}>
-	<Route path="/" component={Layout}>
+	<Route path="/" component={Application}>
 		<IndexRoute component={Home} />
 	</Route>
 </Router>
