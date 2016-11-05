@@ -53,7 +53,7 @@ export default class Hero extends Component {
 							<Button kind="primary" style={{width:'100%'}}>Attendee Registration</Button>
 						</div>
 						<div className="s-grid-cell">
-							<Button kind="outline" style={{width:'100%'}}>Exhibitor Registration</Button>
+							<Button kind="accent" style={{width:'100%'}}>Exhibitor Registration</Button>
 						</div>
 					</section>
 				</FadeOnScroll>

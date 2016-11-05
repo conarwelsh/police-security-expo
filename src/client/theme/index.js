@@ -6,6 +6,8 @@ theme.extendSource('palette', () => ({
 	dark: '#4b4e53',
 	primary: '#1a4ca0',
 	primaryOffset: '#fff',
+	accent: 'rgb(198, 40, 40)',
+	accentOffset: '#fff',
 }))
 
 theme.setSource('font', () => ({
