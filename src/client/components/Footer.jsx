@@ -36,26 +36,36 @@ export default class Footer extends Component {
 					<h3>Page Links</h3>
 					<ul>
 						<li>
-							<a href=''>exhibitors</a>
+							<a href='/exhibitors'>exhibitors</a>
 						</li>
 						<li>
-							<a href=''>attendees</a>
+							<a href='/attendees'>attendees</a>
 						</li>
 						<li>
-							<a href=''>floorplan</a>
+							<a href='https://www.map-dynamics.com/pse2017'>floorplan</a>
 						</li>
 						<li>
-							<a href=''>accommodations</a>
+							<a href='/accommodations'>accommodations</a>
+						</li>
+						<li>
+							<a href='/rates'>rental rates</a>
 						</li>
 					</ul>
 				</div>
 				<div className="s-grid-cell">
-					<h3>Exhibit Opens</h3>
+					<h3>Expo Hours</h3>
 					<p>Tuesday, June 27, 2017 10:00AM - 5:00PM</p>
 					<p>Wednesday, June 28, 2017 10:00AM - 3:30PM</p>
 				</div>
 				<div className="s-grid-cell">
 					<h3>Future Dates</h3>
+
+					Atlantic City (NJ) Convention Center
+					32nd Annual  Police Security  Expo 2018           JUNE 26 & 27, 2018
+					33rd  Annual  Police Security  Expo 2019     	    JUNE 25 & 26, 2019
+					34th  Annual  Police  Security Expo 2020      	   JUNE 23 & 24, 2020
+					Expo Dates listed are Tuesday & Wednesday
+					Exhibit Setup is the Monday prior.
 				</div>
 			</section>
 

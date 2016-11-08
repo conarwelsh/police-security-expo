@@ -12,12 +12,15 @@ export default class Hero extends Component {
 		return <BackgroundSlideshow
 			className="s-grid-stretch s-grid-sm-12 s-grid-lg-6"
 			images={[
-				'/img/expo-floor-1300pixels-bw.jpg',
-				// '/img/RGK_0651.JPG',
-				// '/img/RGK_0732.JPG',
+				'/img/banner1.jpg',
+				'/img/banner2.jpg',
+				'/img/banner3.jpg',
+				'/img/banner4.jpg',
+				'/img/banner5.jpg',
 			]}
 			style={{
 				height: '100%',
+				backgroundPosition: 'center center',
 			}}
 		>
 			<div className="s-grid-cell hidden-mobile">
@@ -50,10 +53,22 @@ export default class Hero extends Component {
 
 					<section className="s-grid-top s-grid-sm-12 s-grid-md-6">
 						<div className="s-grid-cell">
-							<Button kind="primary" style={{width:'100%'}}>Attendee Registration</Button>
+							<Button
+								to='/attendees'
+								kind="primary"
+								style={{width:'100%'}}
+							>
+								Attendee Registration
+							</Button>
 						</div>
 						<div className="s-grid-cell">
-							<Button kind="accent" style={{width:'100%'}}>Exhibitor Registration</Button>
+							<Button
+								to='/exhibitors'
+								kind="accent"
+								style={{width:'100%'}}
+							>
+								Exhibitor Registration
+							</Button>
 						</div>
 					</section>
 				</FadeOnScroll>

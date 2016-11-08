@@ -43,7 +43,7 @@ export default class Home extends Component {
 							style={{
 								width: '100%',
 								height: '100%',
-								backgroundImage: "url(/img/showfloor2.jpg)",
+								backgroundImage: "url(/img/website9.jpg)",
 								backgroundSize: 'cover',
 							}}
 						/>
@@ -162,7 +162,7 @@ export default class Home extends Component {
 					backgroundAttachment: 'fixed',
 				}}
 				images={[
-					'/img/showfloor2.jpg',
+					'/img/videobg.jpg',
 				]}
 			>
 				<div className="videoWrapper">

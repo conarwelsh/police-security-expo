@@ -65,11 +65,18 @@ theme.setSource('Navigation.link', (theme) => {
 	const { dark } = theme.getStyle('palette')
 	
 	return {
-		mixins: ['font'],
 		padding: '0 1em',
 		color: dark,
+		fontFamily: 'Lato, sans-serif',
+		fontWeight: 700,
 	}
 })
+
+theme.setSource('Page', () => ({
+	padding:'130px 0 30px 0',
+	maxWidth:900,
+	margin: '0 auto',
+}))
 
 theme.setSource('Footer', () => ({
 	boxShadow: '0 1px 15px rgba(0,0,0,.15)',
