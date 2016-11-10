@@ -15,6 +15,7 @@ export default class Navigation extends Component {
 				floorplan
 			</a>
 			<a href='/accommodations' style={theme.getStyle('Navigation.link')}>accommodations</a>
+			<a href='/directions' style={theme.getStyle('Navigation.link')}>directions</a>
 		</nav>
 	}
 

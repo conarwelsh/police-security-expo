@@ -33,7 +33,7 @@ export default class Footer extends Component {
 					</address>
 				</div>
 				<div className="s-grid-cell">
-					<h3>Page Links</h3>
+					<h3>Pages</h3>
 					<ul>
 						<li>
 							<a href='/exhibitors'>exhibitors</a>
@@ -60,12 +60,17 @@ export default class Footer extends Component {
 				<div className="s-grid-cell">
 					<h3>Future Dates</h3>
 
-					Atlantic City (NJ) Convention Center
-					32nd Annual  Police Security  Expo 2018           JUNE 26 & 27, 2018
-					33rd  Annual  Police Security  Expo 2019     	    JUNE 25 & 26, 2019
-					34th  Annual  Police  Security Expo 2020      	   JUNE 23 & 24, 2020
-					Expo Dates listed are Tuesday & Wednesday
-					Exhibit Setup is the Monday prior.
+					<p>
+						Atlantic City (NJ) Convention Center
+						<br /><br />
+						32nd Annual  Police Security  Expo 2018 - JUNE 26 & 27, 2018<br />
+						33rd  Annual  Police Security  Expo 2019 - JUNE 25 & 26, 2019<br />
+						34th  Annual  Police  Security Expo 2020 - JUNE 23 & 24, 2020<br />
+						<br /><br />
+						Expo Dates listed are Tuesday & Wednesday
+						<br /><br />
+						Exhibit Setup is the Monday prior.
+					</p>
 				</div>
 			</section>
 

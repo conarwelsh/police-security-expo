@@ -23,25 +23,19 @@ export default class Hero extends Component {
 				backgroundPosition: 'center center',
 			}}
 		>
-			<div className="s-grid-cell hidden-mobile">
+			<div className="s-grid-cell hidden-mobile" style={{ textAlign: 'center' }}>
+				<img src="/img/trade-show-executive.jpeg" style={{ marginTop: 150 }} />
 			</div>
 			
 			<div className="s-grid-cell">
 				<FadeOnScroll style={{
-					padding: '300px 0'
+					backgroundColor: 'rgba(0,0,0,0.5)',
+					margin: '300px 0',
+					padding: 50,
+					color: '#fff',
 				}}>
-					<h1>
-						<small>31st Annual</small>
-						<br />
-						Police Security Expo
-					</h1>
+					<img src="/img/ps-banner.jpeg" />
 					
-					<div style={theme.getStyle('partial underline')} />
-					
-					<p className="lead">
-						June 27th & 28th, 2017
-					</p>
-
 					<p>
 						The industry's longest running, most respected, attendee-driven product showcase.
 					</p>
