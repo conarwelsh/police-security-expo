@@ -190,17 +190,23 @@ export default class Home extends Component {
 				<section className="s-grid-stretch s-grid-sm-12 s-grid-md-4">
 					<div className="s-grid-cell">
 						<CenteredVertical style={{textAlign:'center'}}>
-							<img style={{maxWidth:250}} src="/img/cropped-logopng-100-1.png" />
+							<a href="http://www.policeandsecuritynews.com">
+								<img style={{maxWidth:250}} src="/img/cropped-logopng-100-1.png" />
+							</a>
 						</CenteredVertical>
 					</div>
 					<div className="s-grid-cell">
 						<CenteredVertical style={{textAlign:'center'}}>
-							<img style={{maxWidth:250}} src="/img/NJ%20Chiefs%20logo-JPEG%20file.jpg" />
+							<a href="http://www.njsacop.org">
+								<img style={{maxWidth:250}} src="/img/NJ%20Chiefs%20logo-JPEG%20file.jpg" />
+							</a>
 						</CenteredVertical>
 					</div>
 					<div className="s-grid-cell">
 						<CenteredVertical style={{textAlign:'center'}}>
-							<img style={{maxWidth:250}} src="/img/swa-logo.png" />
+							<a href="http://www.siteworkassociates.com">
+								<img style={{maxWidth:250}} src="/img/swa-logo.png" />
+							</a>
 						</CenteredVertical>
 					</div>
 				</section>

@@ -33,6 +33,7 @@ export default class Hero extends Component {
 					margin: '300px 0',
 					padding: 50,
 					color: '#fff',
+					textAlign: 'center',
 				}}>
 					<img src="/img/ps-banner.jpeg" />
 					
@@ -40,10 +41,10 @@ export default class Hero extends Component {
 						The industry's longest running, most respected, attendee-driven product showcase.
 					</p>
 					
-					<p>
+					<p><strong>
 						Technology and solutions
 						for today and tomorrow
-					</p>
+					</strong></p>
 
 					<section className="s-grid-top s-grid-sm-12 s-grid-md-6">
 						<div className="s-grid-cell">

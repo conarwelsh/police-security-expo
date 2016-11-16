@@ -38,6 +38,9 @@ export default class Exhibitors extends Component {
 					Floorplan
 				</Button>
 			</p>
+
+			<img src="/img/website7.JPG" />
+			<img src="/img/website5.JPG" />
 		</div>
 	}
 }
