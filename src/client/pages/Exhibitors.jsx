@@ -39,8 +39,8 @@ export default class Exhibitors extends Component {
 				</Button>
 			</p>
 
-			<img src="/img/website7.JPG" />
-			<img src="/img/website5.JPG" />
+			<img src="/img/website7.jpg" />
+			<img src="/img/website5.jpg" />
 		</div>
 	}
 }
