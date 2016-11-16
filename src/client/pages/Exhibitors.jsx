@@ -10,7 +10,7 @@ export default class Exhibitors extends Component {
 			<div style={theme.getStyle('partial underline')} />
 
 			<p>
-				<Button href="" target="_blank" kind="primary">
+				<Button href="/files/PSE17 Application & Exhibit Space Contract.pdf" target="_blank" kind="primary">
 					Exhibitor Application
 				</Button>
 			</p>
